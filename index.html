@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manas Sinha | Cybersecurity & Software Engineer</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portfolio of Manas Sinha - Cybersecurity undergraduate at Chandigarh University. Focused on network forensics, binary exploitation, and UI/UX design. Team member at Xaenithra.">
+  <meta name="keywords" content="Manas Sinha, Cybersecurity, Portfolio, Network Forensics, Binary Exploitation, Xaenithra, Web Development, Vibe Coding">
+  <meta name="author" content="Manas Sinha">
+  
+  <!-- Fonts & Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Style Sheets -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Preloader Screen (Cyber Diagnostics Portal Initialization) -->
+  <div id="preloader" aria-hidden="true">
+    <div class="preloader-content">
+      <div class="loader-terminal">
+        <div class="terminal-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="title">sys_init.sh</span>
+        </div>
+        <div class="terminal-body" id="loader-output">
+          <p>> LOADING SYSTEM PARAMETERS...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Background Canvas for Node Networking Animation -->
+  <canvas id="canvas-network"></canvas>
+
+
+  <!-- Custom Cursor Element (Only on desktop) -->
+  <div id="custom-cursor" aria-hidden="true"></div>
+
+  <!-- Header Navigation -->
+  <header>
+    <div class="nav-container">
+      <a href="#hero" class="logo interactive">
+        <span class="logo-accent">&lt;</span>MANAS<span class="logo-accent"> /&gt;</span>
+      </a>
+      
+      <button class="menu-toggle interactive" id="menu-toggle" aria-label="Toggle Navigation Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="nav">
+        <ul>
+          <li><a href="#hero" class="nav-link interactive active">NEXUS</a></li>
+          <li><a href="#about" class="nav-link interactive">DOSSIER</a></li>
+          <li><a href="#skills" class="nav-link interactive">MATRIX</a></li>
+          <li><a href="#projects" class="nav-link interactive">OPERATIONS</a></li>
+          <li><a href="#terminal" class="nav-link interactive">SANDBOX</a></li>
+          <li><a href="#contact" class="nav-link interactive btn-nav">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Section 1: Hero -->
+    <section id="hero">
+      <div class="hero-container">
+        <div class="hero-profile-area reveal" data-reveal="left">
+          <div class="profile-frame">
+            <img src="assets/manas.jpeg" alt="Manas Sinha Headshot" class="profile-img">
+            <div class="profile-ring"></div>
+            <div class="status-indicator">
+              <span class="status-dot"></span>
+              <span class="status-text">NODE_ACTIVE</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="hero-text-area">
+          <div class="hero-badge reveal" data-reveal="down" data-reveal-delay="100">SEC_LEVEL_01 // INTRUSION_FORENSICS</div>
+          <h1 class="hero-name reveal" data-reveal="up" data-reveal-delay="200">MANAS SINHA</h1>
+          <h2 class="hero-title reveal" data-reveal="up" data-reveal-delay="300">
+            Cybersecurity Undergraduate <span class="typing-text" id="typing-sub"></span>
+          </h2>
+          <p class="hero-description reveal" data-reveal="up" data-reveal-delay="400">
+            Focused on network forensics, traffic reconstruction, and binary exploitation. Bridging technical security engineering with premium, user-first UI/UX interfaces built via AI-assisted workflows.
+          </p>
+          <div class="hero-actions reveal" data-reveal="up" data-reveal-delay="500">
+            <a href="#terminal" class="btn btn-primary interactive">Access Sandbox CLI</a>
+            <a href="#projects" class="btn btn-secondary interactive">Review Operations</a>
+          </div>
+          <div class="hero-socials reveal" data-reveal="up" data-reveal-delay="600">
+            <a href="https://linkedin.com/in/manas-sinha-b0ttlecap" target="_blank" rel="noopener noreferrer" class="social-link interactive" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/manas20sinha-art" target="_blank" rel="noopener noreferrer" class="social-link interactive" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://tryhackme.com/p/ManasSinha" target="_blank" rel="noopener noreferrer" class="social-link interactive" aria-label="TryHackMe"><i class="fas fa-shield-alt"></i></a>
+            <a href="mailto:manas20sinha@gmail.com" class="social-link interactive" aria-label="Email"><i class="far fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator" aria-hidden="true">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+        <span class="label">DECRYPTING BELOW</span>
+      </div>
+    </section>
+
+    <!-- Section 2: About / Dossier -->
+    <section id="about">
+      <div class="container">
+        <div class="section-header reveal" data-reveal="left">
+          <div class="section-num">01 /</div>
+          <h2 class="section-title">SYSTEM DOSSIER</h2>
+          <div class="section-line"></div>
+        </div>
+        
+        <div class="about-grid">
+          <div class="about-dossier-card card reveal" data-reveal="left" data-reveal-delay="100">
+            <div class="card-header">
+              <i class="fas fa-user-shield text-accent"></i>
+              <h3>OBJECTIVE & ALIGNMENT</h3>
+            </div>
+            <div class="card-body">
+              <p>
+                Cybersecurity undergraduate focused on network forensics, with hands-on CTF experience and a growing foundation in binary exploitation. Complements technical security work with practical UI/UX design through AI-assisted ("vibe-coded") development workflows. Looking to contribute to and grow within collaborative security research and networking projects.
+              </p>
+              <div class="dossier-metadata">
+                <div class="meta-item affiliation-row">
+                  <span class="meta-label">AFFILIATION</span>
+                  <span class="meta-value">
+                    <a href="https://xaenithra.com" target="_blank" class="xaenithra-badge interactive">
+                      <span class="badge-pulse-green"></span> XAENITHRA TEAM <i class="fas fa-external-link-alt badge-icon"></i>
+                    </a>
+                  </span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">SPECIALIZATION</span>
+                  <span class="meta-value">Network Forensics / Pwn</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">LANGUAGES</span>
+                  <span class="meta-value">English (C1), Hindi (Native), Punjabi (B1), Russian (A2)</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">HOBBIES</span>
+                  <span class="meta-value">Vibe Coding / Language Exploration</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="about-education-card card reveal" data-reveal="right" data-reveal-delay="200">
+            <div class="card-header">
+              <i class="fas fa-graduation-cap text-accent"></i>
+              <h3>EDUCATION REGISTRY</h3>
+            </div>
+            <div class="card-body">
+              <div class="timeline">
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-header">
+                    <h4>Chandigarh University (UIE)</h4>
+                    <span class="timeline-date">2025 - Present</span>
+                  </div>
+                  <p class="timeline-desc">B.E. CSE, Cybersecurity specialization. Core focus on network security, forensics, cryptanalysis, and algorithmic structures.</p>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-header">
+                    <h4>G.M.S.S.S</h4>
+                    <span class="timeline-date">2023 - 2025</span>
+                  </div>
+                  <p class="timeline-desc">High School Certificate. Foundation in Physics, Chemistry, Mathematics, and Computer Science.</p>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-header">
+                    <h4>Ashiana Public School</h4>
+                    <span class="timeline-date">2010 - 2023</span>
+                  </div>
+                  <p class="timeline-desc">Primary and Secondary Education.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Skills Matrix -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-header reveal" data-reveal="left">
+          <div class="section-num">02 /</div>
+          <h2 class="section-title">SKILLS MATRIX</h2>
+          <div class="section-line"></div>
+        </div>
+        
+        <div class="skills-grid">
+          <div class="skills-category-card card reveal" data-reveal="left" data-reveal-delay="100">
+            <div class="card-header">
+              <i class="fas fa-terminal text-accent"></i>
+              <h3>TECHNICAL VECTOR</h3>
+            </div>
+            <div class="card-body">
+              <div class="skills-list">
+                <div class="skill-item interactive-skill" data-skill="network">
+                  <div class="skill-info">
+                    <span class="skill-name"><i class="fas fa-network-wired skill-icon text-accent"></i> Network Forensics</span>
+                  </div>
+                  <div class="skill-bar-bg">
+                    <div class="skill-bar-fill" style="width: 90%"></div>
+                  </div>
+                  <div class="skill-details">Packet analysis, traffic reconstruction, Wireshark, network-based investigation.</div>
+                </div>
+                
+                <div class="skill-item interactive-skill" data-skill="pwn">
+                  <div class="skill-info">
+                    <span class="skill-name"><i class="fas fa-bug skill-icon text-accent"></i> Binary Exploitation (Pwn)</span>
+                  </div>
+                  <div class="skill-bar-bg">
+                    <div class="skill-bar-fill" style="width: 70%"></div>
+                  </div>
+                  <div class="skill-details">Stack overflows, format string vulnerabilities, basic exploit scripts, CTF pwn challenges.</div>
+                </div>
+
+                <div class="skill-item interactive-skill" data-skill="linux">
+                  <div class="skill-info">
+                    <span class="skill-name"><i class="fas fa-terminal skill-icon text-accent"></i> Bash & Linux Operations</span>
+                  </div>
+                  <div class="skill-bar-bg">
+                    <div class="skill-bar-fill" style="width: 85%"></div>
+                  </div>
+                  <div class="skill-details">Shell scripting, environment administration, process auditing, security automation.</div>
+                </div>
+
+                <div class="skill-item interactive-skill" data-skill="cpp">
+                  <div class="skill-info">
+                    <span class="skill-name"><i class="fas fa-code skill-icon text-accent"></i> C / C++ & DSA</span>
+                  </div>
+                  <div class="skill-bar-bg">
+                    <div class="skill-bar-fill" style="width: 80%"></div>
+                  </div>
+                  <div class="skill-details">Low-level memory management, data structures, algorithms, efficient script execution.</div>
+                </div>
+
+                <div class="skill-item interactive-skill" data-skill="java">
+                  <div class="skill-info">
+                    <span class="skill-name"><i class="fab fa-java skill-icon text-accent"></i> Java Programming</span>
+                  </div>
+                  <div class="skill-bar-bg">
+                    <div class="skill-bar-fill" style="width: 75%"></div>
+                  </div>
+                  <div class="skill-details">Object-oriented application structures, secure coding patterns, multi-threaded algorithms.</div>
+                </div>
+
+                <div class="skill-item interactive-skill" data-skill="sql">
+                  <div class="skill-info">
+                    <span class="skill-name"><i class="fas fa-database skill-icon text-accent"></i> SQL & Databases</span>
+                  </div>
+                  <div class="skill-bar-bg">
+                    <div class="skill-bar-fill" style="width: 75%"></div>
+                  </div>
+                  <div class="skill-details">Relational query design, schema audits, vulnerability scanning (SQL injection prevention).</div>
+                </div>
+
+                <div class="skill-item interactive-skill" data-skill="web">
+                  <div class="skill-info">
+                    <span class="skill-name"><i class="fas fa-laptop-code skill-icon text-accent"></i> Web Development</span>
+                  </div>
+                  <div class="skill-bar-bg">
+                    <div class="skill-bar-fill" style="width: 70%"></div>
+                  </div>
+                  <div class="skill-details">HTML5, vanilla CSS/JS, modern layout architectures, secure HTTP headers.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-category-card card reveal" data-reveal="right" data-reveal-delay="200">
+            <div class="card-header">
+              <i class="fas fa-brain text-accent"></i>
+              <h3>PROFESSIONAL & SYSTEM</h3>
+            </div>
+            <div class="card-body">
+              <div class="skills-list">
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Problem Solving & Analytics</span>
+                  </div>
+                  <div class="skill-bar-bg">
+                    <div class="skill-bar-fill" style="width: 95%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Project Management & Dev Workflow</span>
+                  </div>
+                  <div class="skill-bar-bg">
+                    <div class="skill-bar-fill" style="width: 80%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Teamwork & Collaboration</span>
+                  </div>
+                  <div class="skill-bar-bg">
+                    <div class="skill-bar-fill" style="width: 85%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Effective Communication</span>
+                  </div>
+                  <div class="skill-bar-bg">
+                    <div class="skill-bar-fill" style="width: 90%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Operations / Projects -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-header reveal" data-reveal="left">
+          <div class="section-num">03 /</div>
+          <h2 class="section-title">ACTIVE OPERATIONS</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="filter-controls reveal" data-reveal="up" data-reveal-delay="100">
+          <button class="filter-btn active interactive" data-filter="all">ALL DEPLOYMENTS</button>
+          <button class="filter-btn interactive" data-filter="security">SECURITY</button>
+          <button class="filter-btn interactive" data-filter="development">DEVELOPMENT</button>
+          <button class="filter-btn interactive" data-filter="design">DESIGN</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Xaenithra -->
+          <div class="project-card card reveal" data-reveal="up" data-reveal-delay="100" data-category="security">
+            <div class="project-image-placeholder">
+              <i class="fas fa-user-secret project-icon-bg"></i>
+              <div class="project-category-badge">SECURITY</div>
+            </div>
+            <div class="card-body">
+              <div class="project-meta">
+                <span class="project-date">2026 - Present</span>
+                <span class="project-role">Team Member</span>
+              </div>
+              <h3 class="project-title">Xaenithra Operations</h3>
+              <p class="project-desc">
+                Active core member of Xaenithra, training and competing with the team in network forensics, packet reconstruction, and binary exploitation (pwn) challenges.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Network Forensics</span>
+                <span class="tag">Pwn</span>
+                <span class="tag">BYU CTF (15th)</span>
+              </div>
+              <div class="project-links">
+                <a href="https://xaenithra.com" target="_blank" rel="noopener noreferrer" class="btn-text interactive">Explore Network <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: EdTech -->
+          <div class="project-card card reveal" data-reveal="up" data-reveal-delay="250" data-category="development">
+            <div class="project-image-placeholder">
+              <i class="fas fa-graduation-cap project-icon-bg"></i>
+              <div class="project-category-badge">DEVELOPMENT</div>
+            </div>
+            <div class="card-body">
+              <div class="project-meta">
+                <span class="project-date">2026</span>
+                <span class="project-role">Founder & Lead Developer</span>
+              </div>
+              <h3 class="project-title">EdTech Application</h3>
+              <p class="project-desc">
+                Designed and developed a comprehensive EdTech platform end-to-end as an independent project, leveraging clean components and a modern responsive user architecture.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Web Development</span>
+                <span class="tag">UI/UX Layout</span>
+                <span class="tag">Application Architecture</span>
+              </div>
+              <div class="project-links">
+                <a href="#terminal" class="btn-text interactive">Simulate Project <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Sea Cones -->
+          <div class="project-card card reveal" data-reveal="up" data-reveal-delay="400" data-category="design">
+            <div class="project-image-placeholder">
+              <i class="fas fa-headphones project-icon-bg"></i>
+              <div class="project-category-badge">DESIGN</div>
+            </div>
+            <div class="card-body">
+              <div class="project-meta">
+                <span class="project-date">2025</span>
+                <span class="project-role">Concept Designer</span>
+              </div>
+              <h3 class="project-title">“Sea Cones” Earphones</h3>
+              <p class="project-desc">
+                An industrial design exploration, conceptualizing modern audio delivery forms, premium acoustic properties, and ergonomics beyond conventional headphones.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Industrial Design</span>
+                <span class="tag">Audio Concept</span>
+                <span class="tag">UI/UX Workflow</span>
+              </div>
+              <div class="project-links">
+                <a href="#terminal" class="btn-text interactive">View Design Concept <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Interactive Terminal Simulator -->
+    <section id="terminal">
+      <div class="container">
+        <div class="section-header reveal" data-reveal="left">
+          <div class="section-num">04 /</div>
+          <h2 class="section-title">SANDBOX CLI TERMINAL</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="terminal-container card reveal" data-reveal="up" data-reveal-delay="150">
+          <div class="terminal-bar">
+            <div class="terminal-buttons">
+              <span class="term-dot close"></span>
+              <span class="term-dot minimize"></span>
+              <span class="term-dot maximize"></span>
+            </div>
+            <div class="terminal-tab-title">manas@xaenithra:~ - Active Secure Shell</div>
+            <div class="terminal-connection-status"><i class="fas fa-lock"></i> AES-256</div>
+          </div>
+          
+          <div class="terminal-screen" id="terminal-screen">
+            <div class="terminal-welcome">
+              <pre class="terminal-ascii">
+ ██████╗██╗   ██╗██████╗ ███████╗██████╗ 
+██╔════╝╚██╗ ██╔╝██╔══██╗██╔════╝██╔══██╗
+██║      ╚████╔╝ ██████╔╝█████╗  ██████╔╝
+██║       ╚██╔╝  ██╔══██╗██╔══╝  ██╔══██╗
+╚██████╗   ██║   ██████╔╝███████╗██║  ██║
+ ╚═════╝   ╚═╝   ╚═════╝ ╚══════╝╚═╝  ╚═╝
+              </pre>
+              <p>Welcome to Manas Sinha's Dossier Command Line Interface.</p>
+              <p>Type <span class="cmd-highlight">help</span> to list all active commands, or start with the <span class="cmd-highlight">flag</span> challenge!</p>
+              <br>
+            </div>
+            
+            <div id="terminal-logs"></div>
+            
+            <div class="terminal-prompt-line">
+              <span class="prompt-user">manas@xaenithra</span><span class="prompt-symbol">:~$</span>
+              <input type="text" id="terminal-input" autocomplete="off" spellcheck="false" aria-label="Terminal Input">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header reveal" data-reveal="left">
+          <div class="section-num">05 /</div>
+          <h2 class="section-title">SECURE CONTACT BRIDGE</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="contact-channels-container card reveal" data-reveal="up" data-reveal-delay="150">
+          <div class="card-header">
+            <i class="fas fa-network-wired text-accent"></i>
+            <h3>SECURE COMM VECTOR DIRECTORY</h3>
+          </div>
+          <div class="card-body">
+            <p class="contact-subtitle">Establish direct connections via audited secure ports. Active link listeners are ready below:</p>
+            <div class="contact-channels-horizontal">
+              <a href="mailto:manas20sinha@gmail.com" class="channel-item-h interactive">
+                <div class="channel-icon-h"><i class="far fa-envelope"></i></div>
+                <div class="channel-details-h">
+                  <span class="channel-label-h">EMAIL ADDRESS</span>
+                  <span class="channel-value-h">manas20sinha@gmail.com</span>
+                </div>
+              </a>
+
+              <a href="https://linkedin.com/in/manas-sinha-b0ttlecap" target="_blank" rel="noopener noreferrer" class="channel-item-h interactive">
+                <div class="channel-icon-h"><i class="fab fa-linkedin-in"></i></div>
+                <div class="channel-details-h">
+                  <span class="channel-label-h">LINKEDIN IDENTITY</span>
+                  <span class="channel-value-h">manas-sinha-b0ttlecap</span>
+                </div>
+              </a>
+
+              <a href="https://github.com/manas20sinha-art" target="_blank" rel="noopener noreferrer" class="channel-item-h interactive">
+                <div class="channel-icon-h"><i class="fab fa-github"></i></div>
+                <div class="channel-details-h">
+                  <span class="channel-label-h">SOURCE CODE</span>
+                  <span class="channel-value-h">manas20sinha-art</span>
+                </div>
+              </a>
+
+              <a href="https://tryhackme.com/p/ManasSinha" target="_blank" rel="noopener noreferrer" class="channel-item-h interactive">
+                <div class="channel-icon-h"><i class="fas fa-shield-alt"></i></div>
+                <div class="channel-details-h">
+                  <span class="channel-label-h">TRYHACKME</span>
+                  <span class="channel-value-h">tryhackme.com/p/ManasSinha</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-top">
+        <span class="footer-logo">&lt;MANAS SINHA /&gt;</span>
+        <p class="footer-status"><span class="pulse-dot"></span> CONNECTION TERMINATED GRACEFULLY // SUBDOMAIN OF XAENITHRA.COM</p>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2026 Manas Sinha. All rights reserved. Vibe coded with precision.</p>
+        <div class="footer-socials">
+          <a href="https://linkedin.com/in/manas-sinha-b0ttlecap" target="_blank" rel="noopener noreferrer" class="interactive">LINKEDIN</a>
+          <span class="separator">/</span>
+          <a href="https://github.com/manas20sinha-art" target="_blank" rel="noopener noreferrer" class="interactive">GITHUB</a>
+          <span class="separator">/</span>
+          <a href="https://tryhackme.com/p/ManasSinha" target="_blank" rel="noopener noreferrer" class="interactive">TRYHACKME</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- App Script -->
+  <script src="app.js"></script>
+</body>
+</html>
